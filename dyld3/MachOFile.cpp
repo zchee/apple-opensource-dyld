@@ -585,8 +585,8 @@ Platform MachOFile::currentPlatform()
 #else
     return Platform::iOS_simulator;
 #endif
-#elif TARGET_OS_BRIDGE
-    return Platform::bridgeOS;
+// #elif TARGET_OS_BRIDGE
+//     return Platform::bridgeOS;
 #elif TARGET_OS_WATCH
     return Platform::watchOS;
 #elif TARGET_OS_TV

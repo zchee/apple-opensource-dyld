@@ -30,12 +30,12 @@
 #include <mach-o/dyld_priv.h>
 #include <sys/stat.h>
 #include <sys/sysctl.h>
-#include <System/machine/cpu_capabilities.h>
-#include <_simple.h>
+#include "System/machine/cpu_capabilities.h"
+#include "_simple.h"
 
 extern "C" {
-  #include <corecrypto/ccdigest.h>
-  #include <corecrypto/ccsha2.h>
+  #include "corecrypto/ccdigest.h"
+  #include "corecrypto/ccsha2.h"
 }
 
 #include "Closure.h"

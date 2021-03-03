@@ -40,7 +40,7 @@
 #include "CodeSigningTypes.h"
 #include <CommonCrypto/CommonHMAC.h>
 #include <CommonCrypto/CommonDigest.h>
-#include <CommonCrypto/CommonDigestSPI.h>
+#include "CommonDigestSPI.h"
 
 #define NO_ULEB
 #include "Architectures.hpp"
@@ -828,7 +828,8 @@ int main(int argc, const char* argv[])
     }
 
     //void* handle = dlopen("/Volumes/my/src/dyld/build/Debug/dsc_extractor.bundle", RTLD_LAZY);
-    void* handle = dlopen("/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/lib/dsc_extractor.bundle", RTLD_LAZY);
+    // void* handle = dlopen("/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/lib/dsc_extractor.bundle", RTLD_LAZY);
+    void* handle = dlopen("/usr/lib/dsc_extractor.bundle", RTLD_LAZY);
     if ( handle == NULL ) {
         fprintf(stderr, "dsc_extractor.bundle could not be loaded\n");
         return 1;

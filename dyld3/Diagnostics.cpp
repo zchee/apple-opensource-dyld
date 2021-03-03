@@ -30,7 +30,7 @@
 #include <uuid/uuid.h>
 #include <fcntl.h>
 #include <errno.h>
-#include <_simple.h>
+#include "_simple.h"
 #include <unistd.h>
 #include <sys/uio.h>
 #include <sys/param.h>
@@ -47,7 +47,7 @@
 #include <mach-o/nlist.h>
 #include <mach-o/fat.h>
 #include <pthread.h>
-#include <libc_private.h>
+#include "libc_private.h"
 
 #include "Diagnostics.h"
 
